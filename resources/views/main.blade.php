@@ -159,7 +159,7 @@
 
                                     <div class="col-sm mt-4">
                                         <label class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="content-4-inputtext" placeholder="name@example.com">
+                                        <input type="email" class="form-control" id="content-4-inputtext" placeholder="unidos@gmail.com">
                                     </div>  
                                 </div>
 
@@ -209,12 +209,12 @@
     </div>
 
     <div class="row-auto d-flex align-self-center ps-5 pe-5" id="cookies" style="line-height:80px; width:100vw !important; z-index:100">
-        <div class="col ps-5">
+        <div class="col-auto ps-5">
             <p><span style="font-weight: bolder">Este site utiliza cookies. </span><span style="font-weight: normal"> Estará a consentir a sua utilização. </span><span style="font-weight: normal; text-decoration: underline">Saber mais</span></p>
         </div>
 
-        <div class="col me-5 d-flex justify-content-end">        
-            <button class="btn p-3 pe-5 ps-5 shadow-none" id="cookies-btn" onclick="closeCookies()">Enviar</button>      
+        <div class="col me-5 d-flex justify-content-end align-self-center">        
+            <button class="btn p-3 pe-5 ps-5 shadow-none" id="cookies-btn" onclick="closeCookies()" style="height:60px">Aceitar</button>      
         </div>        
     </div>
 </body>
