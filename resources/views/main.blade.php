@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{ url('/css/app.css') }}" rel="stylesheet">
+    <link href="{{ url('/css/main.css') }}" rel="stylesheet">
+
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
+
+<script>
+    function closeCookies()
+    {
+        var cookieDiv = document.getElementById('cookies');
+
+        cookieDiv.style.visibility = "hidden";
+    }
+</script>
+
 <body style="padding:0; margin:0">
     <nav class="navbar navbar-light bg-light p-0" id="navbar">
         <div class="w-100">
             <div class="row" style="height:80px; width:100vw">
-                <div class="col-auto d-flex align-self-center ms-4 pe-4 border-end h-100">
-                    <img src="{{ url('/svg/navbar/navbar-brand.svg') }}" alt="Logo">
-                </div>
+                <a href="#" class="col-auto d-flex justify-content-center align-self-center ps-4 pe-4 border-end h-100" id="navbar-logo">
+                   <img src="{{ url('/svg/navbar/navbar-brand.svg') }}" alt="Logo">
+                </a>
 
                 <div class="col-auto ms-2 d-flex justify-content-center align-self-center d-none d-lg-block">
                     <img src="{{ url('/svg/navbar/navbar-socials.svg') }}" alt="Socials" class="d-inline-block align-middle">
@@ -27,10 +38,10 @@
                             <span style="line-height:80px"> AUTÁRQUICAS⠀2021 </span>
                         </div>
 
-                        <div class="col p-0 m-0 ms-3 ps-4 pe-4 border-start h-100 d-flex align-self-center" id="menu-button" style="height:80px; line-height:80px">
+                        <a href="#" class="col p-0 m-0 ms-3 ps-4 pe-4 border-start h-100 d-flex align-self-center" id="menu-button" style="height:80px; line-height:80px" onclick=""> 
                             <img src="{{ url('/svg/navbar/navbar-menu.svg') }}" alt="Menu" class="d-inline-block align-middle me-3">
                             <span> MENU </span>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -106,6 +117,105 @@
                     </div>  
                 </div>            
             </div>
+
+            <div class="row-auto m-0 d-flex justify-content-center align-self-center" id="content-4" style="width: 100vw;">
+                <div id="content-4-box">
+                    <div class="row m-0 p-0">
+                        <div class="col d-flex justify-content-center align-self-center" id="content-4-text"  style="line-height:100px">
+                            <div>
+                                O que <span style="color: rgb(49, 187, 172)">quero ver</span> na minha freguesia
+                            </div>
+                        </div>
+
+                        <div class="col d-flex justify-content-center align-self-center" id="content-4-text" style="background-color: rgb(49, 187, 172); line-height:100px">
+                            <div class="d-none d-xl-block" style="opacity: 70%">
+                                O que <span style="color:white">não quero ver</span> na minha freguesia
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="content-4-container">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm mt-4">
+                                        <label class="form-label">Nome (opcional)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" id="content-4-inputtext" placeholder="Primeiro e último nome">
+                                    </div>
+
+                                    <div class="col-sm mt-4">
+                                        <label class="form-label">Data de Nascimento (opcional)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" id="content-4-inputtext" placeholder="DD/MM/AAAA">
+                                    </div>  
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm mt-4">
+                                        <label class="form-label">Freguesia</label>
+                                        <select class="form-control">
+                                            <option>Silveira</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-sm mt-4">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="content-4-inputtext" placeholder="name@example.com">
+                                    </div>  
+                                </div>
+
+                                <div class="row">
+                                    <div class="col mt-4">
+                                        <label class="form-label">Mensagem</label>
+                                        <textarea class="form-control" style="height:200px; resize: none" placeholder="Escreva aqui o que quer ver na sua freguesia..."></textarea>
+                                    </div>                                  
+                                </div>
+                                
+                                <div class="row mt-5">
+                                    <div class="col d-flex align-self-center" id="content-4-checkbox-termos">
+                                        <input type="checkbox" class="me-2">
+                                            <p>Li e aceito a <span>Política de Privacidade</span></p>                                         
+                                        </input>
+                                    </div>    
+
+                                    <div class="col-auto">
+                                       <button class="btn p-4 pe-5 ps-5 shadow-none" id="content-4-btn">Enviar</button>
+                                    </div>                                 
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="row-auto m-0 d-flex justify-content-center align-self-center" id="content-5" style="width: 100vw;">
+                <div style="width: 85vw;">
+                    <div class="row">
+                        <div class="col-auto">Política de Proteção de Dados e Privacidade</div>
+                        <div class="col-auto">▪</div>
+                        <div class="col-auto">Termos e Condições Gerais de Utilização</div>
+                        <div class="col-auto">▪</div>
+                        <div class="col-auto">Política de Cookies</div>
+
+                        <div class="col d-flex justify-content-end">
+                            <span>Por não Slingshot 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-auto m-0 d-flex justify-content-end align-self-center" id="content-6" style="width:100vw">
+                <img src="{{ url('/imgs/content/smallFaixasColoridas.png') }}" class="m-0 p-0" alt="Menu" style="width: 390px">
+            </div>
+    </div>
+
+    <div class="row-auto d-flex align-self-center ps-5 pe-5" id="cookies" style="line-height:80px; width:100vw !important; z-index:100">
+        <div class="col ps-5">
+            <p><span style="font-weight: bolder">Este site utiliza cookies. </span><span style="font-weight: normal"> Estará a consentir a sua utilização. </span><span style="font-weight: normal; text-decoration: underline">Saber mais</span></p>
+        </div>
+
+        <div class="col me-5 d-flex justify-content-end">        
+            <button class="btn p-3 pe-5 ps-5 shadow-none" id="cookies-btn" onclick="closeCookies()">Enviar</button>      
+        </div>        
     </div>
 </body>
 </html>
