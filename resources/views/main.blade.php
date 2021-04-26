@@ -16,7 +16,7 @@
     {
         var cookieDiv = document.getElementById('cookies');
 
-        cookieDiv.style.visibility = "hidden";
+        cookieDiv.style.opacity = "0%";
     }
 </script>
 
