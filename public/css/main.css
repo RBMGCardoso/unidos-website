@@ -9,6 +9,30 @@
     background-color: white !important;
 }
 
+#menu-button
+{
+    transition:0.2s;
+}
+
+#menu-button:hover
+{
+    background-color: rgb(235,235,235) !important;
+
+    padding-right: 30px !important;
+}
+
+#navbar-logo
+{
+    transition: 0.2s;
+}
+
+#navbar-logo:hover
+{
+    background-color: rgb(235,235,235) !important;
+
+    padding-left: 30px !important;
+}
+
 a
 {
     display:block;
@@ -65,30 +89,6 @@ body
     background-color: rgb(49, 187, 172);
 }
 
-#menu-button
-{
-    transition:0.2s;
-}
-
-#menu-button:hover
-{
-    background-color: rgb(235,235,235) !important;
-
-    padding-right: 30px !important;
-}
-
-#navbar-logo
-{
-    transition: 0.2s;
-}
-
-#navbar-logo:hover
-{
-    background-color: rgb(235,235,235) !important;
-
-    padding-left: 30px !important;
-}
-
 #content-1
 {
     background-color: rgb(245,245,245);
@@ -108,6 +108,7 @@ body
     font-size: 0.4em; 
     font-weight: normal; 
     letter-spacing: 2px;
+
     border-color: #111 !important;
     border-radius: 3px;
 }

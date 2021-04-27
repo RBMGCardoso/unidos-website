@@ -17,14 +17,15 @@
         var cookieDiv = document.getElementById('cookies');
 
         cookieDiv.style.opacity = "0%";
+        cookieDiv.style.transform = "translateY(100px)";
     }
 </script>
 
 <body style="padding:0; margin:0">
     <nav class="navbar navbar-light bg-light p-0" id="navbar">
         <div class="w-100">
-            <div class="row" style="height:80px; width:100vw">
-                <a href="#" class="col-auto d-flex justify-content-center align-self-center ps-4 pe-4 border-end h-100" id="navbar-logo">
+            <div class="row m-0" style="height:80px; width:100vw">
+                <a href="{{ route('main-page') }}" class="col-auto d-flex justify-content-center align-self-center ps-4 pe-4 border-end h-100" id="navbar-logo">
                    <img src="{{ url('/svg/navbar/navbar-brand.svg') }}" alt="Logo">
                 </a>
 
@@ -38,7 +39,7 @@
                             <span style="line-height:80px"> AUTÁRQUICAS⠀2021 </span>
                         </div>
 
-                        <a href="#" class="col p-0 m-0 ms-3 ps-4 pe-4 border-start h-100 d-flex align-self-center" id="menu-button" style="height:80px; line-height:80px" onclick=""> 
+                        <a href="{{ route('menu-page') }}" class="col p-0 m-0 ms-3 ps-4 pe-4 border-start h-100 d-flex align-self-center" id="menu-button" style="height:80px; line-height:80px" onclick=""> 
                             <img src="{{ url('/svg/navbar/navbar-menu.svg') }}" alt="Menu" class="d-inline-block align-middle me-3">
                             <span> MENU </span>
                         </a>
