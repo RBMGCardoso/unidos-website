@@ -15,4 +15,14 @@ class MainController extends Controller
     {
         return view('menu');
     }
+
+    public function MovimentoPage()
+    {
+        return view('movimento');
+    }
+
+    public function CandidatosPage()
+    {
+        return view('candidatos');
+    }
 }

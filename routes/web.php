@@ -20,3 +20,7 @@ Route::get('/', [MainController::Class, 'MainPage'])->name('main-page');
 Route::get('/home', [MainController::Class, 'MainPage'])->name('main-page');
 
 Route::get('/menu', [MainController::Class, 'MenuPage'])->name('menu-page');
+
+Route::get('/movimento', [MainController::Class, 'MovimentoPage'])->name('movimento-page');
+
+Route::get('/candidatos', [MainController::Class, 'CandidatosPage'])->name('candidatos-page');

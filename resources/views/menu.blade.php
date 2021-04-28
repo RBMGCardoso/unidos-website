@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ url('/css/menu.css') }}" rel="stylesheet">
+    <link href="{{ url('/css/navbar.css') }}" rel="stylesheet">
 
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light p-0" id="navbar">
+    <nav class="navbar navbar-light bg-light p-0" id="navbar" style="transform: TranslateY(-1px)">
         <div class="w-100">
             <div class="row m-0" style="height:80px; width:100vw">
                 <a href="{{ route('main-page') }}" class="col-auto d-flex justify-content-center align-self-center ps-4 pe-4 border-end h-100" id="navbar-logo">
@@ -39,9 +40,9 @@
     
     <div class="content" style="height:96vh">
         <div class="row d-flex align-self-center h-100 m-0" id="content-1" style="width:100vw">
-            <div class="col-auto d-none d-xl-flex align-self-center justify-content-center" style="height: 100%; padding-top: 250px; padding-bottom: 250px; width: 38vw">
+            <a href="{{ route('main-page') }}" class="col-auto d-none d-xl-flex align-self-center justify-content-center" style="height: 100%; padding-top: 250px; padding-bottom: 250px; width: 38vw">
                 <img src="{{ url('/svg/content/mediumLogo.svg') }}" style="object-fit: contain !important;">
-            </div>
+            </a>
 
             <div class="col d-flex align-items-center" style="background-color: rgb(245,245,245); height:100%;">
                 <div>
@@ -55,13 +56,13 @@
                         </div>
                     </div>
 
-                    <div class="row menu-opt">O MOVIMENTO</div>
-                    <div class="row menu-opt">PROGRAMA ELEITORAL</div>
-                    <div class="row menu-opt">CANDIDATOS</div>
-                    <div class="row menu-opt">AGENDA</div>
-                    <div class="row-auto mt-5">
+                    <a href="{{ route('movimento-page') }}" class="row menu-opt">O MOVIMENTO</a>
+                    <a class="row menu-opt">PROGRAMA ELEITORAL</a>
+                    <a href="{{ route('candidatos-page') }}" class="row menu-opt">CANDIDATOS</a>
+                    <a class="row menu-opt">AGENDA</a>
+                    <a href="{{ route('movimento-page') }}" class="row-auto mt-5">
                             <span id="button1-content-1" class="border border-2 p-4 pe-4 ps-4" style="margin-bottom: 100px !important; width:">Junte-se a nós</span>                  
-                    </div>
+                    </a >
                 </div>
             </div>
         </div>

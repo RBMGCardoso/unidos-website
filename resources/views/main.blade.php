@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ url('/css/main.css') }}" rel="stylesheet">
+    <link href="{{ url('/css/navbar.css') }}" rel="stylesheet">
 
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -73,9 +74,9 @@
                                         <span style="color: rgb(255,80,80)"> Unidos. </span>
                                     </div>
 
-                                    <div class="row-auto mt-2">
+                                    <a href="{{ route('movimento-page') }}"class="row-auto mt-2">
                                         <span id="button1-content-1" class="border border-2 p-4 pe-4 ps-4" style="margin-bottom: 100px !important">Junte-se a nós</span>
-                                    </div>
+                                    </a>
 
                                 </div>
                             </div>

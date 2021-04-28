@@ -1,0 +1,51 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bold !important;
+    font-size: 0.7em !important;
+    letter-spacing: 5px;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+#content-1-title
+{
+    color: #333;
+    
+    font-size: 4.2em !important;
+    font-weight: 900 !important;
+    letter-spacing: 10px;
+}
+
+#content-1-subtitle
+{
+    color: #333;
+    
+    font-size: 1.6em !important;
+    font-weight: 900 !important;
+    letter-spacing: 1.1px;
+}
+
+#content-1-text
+{
+    padding-left: calc(30px + 9vw) !important;
+}
+
+#candidato-card
+{
+    float: left !important;
+}
+
+#candidato-card-title
+{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#candidato-card-cargo
+{
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
